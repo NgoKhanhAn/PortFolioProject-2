@@ -1,4 +1,6 @@
-# Learn to clean data in sql
+# Learn to clean data in SQL
+## Objective: To learn more about cleanning data using SQL. In this example I cleaned Date, fixed NULL values where it shouldn't be, separate Address and City, combine different data values like "Y, N" and "Yes, No" and finally remove some duplicate data.
+
 ## Dataset used:
 - <a href="https://github.com/NgoKhanhAn/PortFolioProject-2/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx">Nasville Housing Data</a>
 
@@ -9,7 +11,7 @@
 ## Fix NULL values in Property Address
 <img width="547" height="188" alt="image" src="https://github.com/user-attachments/assets/bc3263df-0ef1-4f0c-bfbb-26fc8a7725e0" />
 
-## Seperate Address and City in Property Address data
+## Separate Address and City in Property Address data
 <img width="1237" height="600" alt="image" src="https://github.com/user-attachments/assets/72665058-0c52-4517-bd8e-b512d3f0303e" />
 
 ## Result:

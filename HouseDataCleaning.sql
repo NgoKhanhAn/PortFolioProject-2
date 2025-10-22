@@ -207,6 +207,25 @@ Select *,
 From PortfolioProject2.dbo.NashvilleHousing
 --order by ParcelID
 )
+DELETE 
+From RowNumCTE
+Where row_num > 1
+
+WITH RowNumCTE AS(
+Select *,
+	ROW_NUMBER() OVER (
+	PARTITION BY ParcelID,
+				 PropertyAddress,
+				 SalePrice,
+				 SaleDate,
+				 LegalReference
+				 ORDER BY
+					UniqueID
+					) row_num
+
+From PortfolioProject2.dbo.NashvilleHousing
+--order by ParcelID
+)
 Select *
 From RowNumCTE
 Where row_num > 1
@@ -232,6 +251,7 @@ From PortfolioProject2.dbo.NashvilleHousing
 
 ALTER TABLE PortfolioProject.dbo.NashvilleHousing
 DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress, SaleDate
+
 
 
 
